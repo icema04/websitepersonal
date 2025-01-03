@@ -1,198 +1,205 @@
 <html>
-    <head>
-        <title>BIODATA</title>
+<head>
+    <title>✿BIODATA✿</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <style>
-            body {
-                background: url('Picture/background2_testing.jpg') no-repeat center center / cover;
-                margin: 0;
-                padding: 0;
-            }
+<style>
+    .about-me {
+        display: flex;
+        flex-direction: column; /* Arrange content vertically */
+        align-items: flex-start;
+        justify-content: center;
+        border: 2px solid #ccc; /* Box border */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 800px; /* Optional: Limit width */
+        background-color: #4a2c3a; /* Light background color */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+        gap: 20px; /* Add gap between sections */
+        color: #fff; /* White text color */
+    }
 
-            .navbar {
-                background-color: #4a2c3a;
-                padding: 15px;
-                text-align: center;
-            }
-    
-            .navbar a {
-                text-decoration: none;
-                color: white;
-                padding: 10px 15px;
-                margin: 0 5px;
-                background-color: #4a2c3a;
-                border-radius: 5px;
-                font-weight: bolder;
-            }
-    
-            .navbar a:hover {
-                background-color: #8a6f9c;
-            }
+    .image-container img {
+        width: 300px;
+        height: auto; /* Maintain aspect ratio */
+        border: 2px solid #ddd; /* Optional: Border around image */
+    }
 
-            /* Add margin-top to the image container */
-            .image-container {
-                text-align: center;
-                margin-top: 30px; /* Adjust this value for desired spacing */
-            }
+    .text-container h3 {
+        margin-bottom: 10px;
+        font-family: 'Arial', sans-serif;
+    }
 
-            /* Optional: Style the image itself */
-            .image-container img {
-                width: 320px;
-                border: 5px solid purple;
-            }
-        </style>
-    </head>
+    .text-container ul {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0;
+    }
 
-    <body>
-        <!--heading websites atas sekali-->
-        <center><font color="#ffffff"><h1> ⪩⪨ Welcome to A Glimpse into My World ⪩⪨ </h1></font></center>
+    .text-container li {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-family: 'Georgia', serif;
+    }
+</style>
 
-        <div class="navbar">
-            <a href="home_test.html" target="_blank">Home</a>
-            <a href="Biodata.html" target="_blank">Biodata</a>
-            <a href="hobbies.html" target="_blank">Hobbies</a>
-            <a href="#" target="_blank">Galleries</a>
-            <a href="contact.html" target="_blank">Contact Information</a>
-        </div>
+<body>
+    <!-- Navbar at the top -->
+    <div class="navbar">
+        <a href="home.html" target="_blank">Home</a>
+        <a href="Biodata.html" target="_blank">Biodata</a>
+        <a href="hobbies.html" target="_blank">Hobbies</a>
+        <a href="beloved.html" target="_blank">Beloved</a>
+        <a href="gallery.html" target="_blank">Galleries</a>
+        <a href="contact.html" target="_blank">Contact Information</a>
+    </div>
+
+    <!--banner-->
+    <section class="banner biodata-banner" id="biodT"></section>
+
+    <!--last update-->
+    <p>Last updated: <span id="lastUpdated"></span> at <span id="lastUpdatedTime"></span></p>
+
+    <script>
+        const lastModified = new Date(document.lastModified);
+
+        // Format the date
+        const day = String(lastModified.getDate()).padStart(2, '0');
+        const month = String(lastModified.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+        const year = lastModified.getFullYear();
+
+        // Format the time
+        const hours = String(lastModified.getHours()).padStart(2, '0');
+        const minutes = String(lastModified.getMinutes()).padStart(2, '0');
+        const seconds = String(lastModified.getSeconds()).padStart(2, '0');
+
+        // Update the span elements
+        document.getElementById('lastUpdated').textContent = `${day}/${month}/${year}`;
+        document.getElementById('lastUpdatedTime').textContent = `${hours}:${minutes}:${seconds}`;
+    </script>
+
+      <!-- About Me Section -->
+      <div class="about-me">
+        <div>
+            <img src="Picture/selfpicture.jpeg" alt="Picture of Nur Ismahani binti Ahmad Remi" width="300" height="300">
+            <img src="Picture/selfpicture-maps.jpeg" usemap="#image-map" width="300" height="300">
+            <map name="image-map">
+            <area target="_blank" alt="Belhams " title="Belhams " href="https://vt.tiktok.com/ZS6UKaHHY/" coords="150,150,50" shape="circle">
+            </map>
+
         
 
-        <center><h2 style="color: #f1c6d0; margin-left: 200px; margin-right: 200px;">𓆩♡𓆪 A CANVAS OF MY LIFE 𓆩♡𓆪</center></h2>
 
-        <!-- self Picture -->
-        <div class="image-container">
-            <img src="Picture/selfpicture.jpeg"
-            width="320" border="5" style="border-color: #4a2c3a;">
         </div>
-
-        <!--Qoutes-->
-        <div style="text-align: center;">
-            <blockquote style="font-style: italic; color: #ffffff;"> 
-                <strong>"Think that there's no need to live your life based on the standard of others. Everyone says dream big. 
-                    <br> But I don't think you have to live so fiercely like that all the time." - Kim Namjoon of BTS</strong>
-            </blockquote>
-        </div>
-
-        <!--motto life-->
-        <h3 style="color: #f1c6d0; text-shadow: 4px 3px 5px black; margin-left: 150px;">𓆩♡𓆪 LIFE MOTTO 𓆩♡𓆪</h3>
-        <p style="text-align: justify; font-size: large; width: 80%; margin: 0 auto;">
-            My life motto is: <strong>It's not about waiting for the storm to pass</strong><sub>(patience)</sub> <strong>but learning to dance in the rain.
-            </strong><sup>(strength)</sup><br>
-            Where challenges teach patience, and strength allows us to find happiness even in hard times.
-        </p>
-
-
-        <!--about myself-->
-        <h3 style="color: #f1c6d0; text-shadow: 4px 3px 5px black; margin-left: 150px;">𓆩♡𓆪 ABOUT MYSELF 𓆩♡𓆪</h3>
-            <p style="text-align: justify; font-size: large; width: 80%; margin: 0 auto;">
-            My name is <i>Nur Ismahani binti Ahmad Remi</i> but I am commonly known as <font color="#fff0f5">Isma</font>. I was born at 
-            <strong>Hospital Besar Ipoh, Perak</strong> <i>(September 16, 2004)</i>, and I am now <strong>20 Years old</strong>.
-            I am the <font color="#fff0f5"> eldest </font> of three siblings, with my younger siblings aged 17 and 12. Being a part of such a loving 
-            and close-knit family has shaped who I am today, teaching me the values of <i>responsibility, patience, and care.</i>
-            <br>
-            I would describe myself as a self-disciplined and resourceful problem-solver. My self-discipline allows me to stay focused on my goals, 
-            manage my time effectively, and consistently work towards achieving my objectives. Whether it's juggling assignments or preparing for exams, 
-            I prioritize my tasks and maintain a strong work ethic.
-            <br>
-            I strive to maintain a healthy balance between my academic, personal, and social life. While I work hard to meet my goals, I also recognize 
-            the importance of taking time for myself and nurturing the relationships that matter most. My experiences so far have taught me that growth 
-            is not only about achieving success but also about learning from setbacks and continuing to move forward with resilience.
+        <div>
+            <p>
+                Click the image on the right to see the beautiful hijab I’m wearing!
             </p>
+            <h3>𓆩♡𓆪 QUOTES 𓆩♡𓆪</h3>
+            <ul type="circle">
+                <li><strong>"Think that there's no need to live your life based on the standard of others..." - Kim Namjoon</strong></li>
+                <li><strong>“I'm selfish, impatient, and a little insecure..." - Marilyn Monroe</strong></li>
+                <li><strong>"Would you believe me if I said that I was scared of everything too?" - 'Magic Shop'</strong></li>
+            </ul>
+        </div>
+    </div>
 
-        <!--about education journey-->
-        <h3 style="color: #f1c6d0; text-shadow: 4px 3px 5px black; margin-left: 150px;">𓆩♡𓆪 MY EDUCATION JOURNEY 𓆩♡𓆪</h3>
-
-            <dl style="width: 80%; margin: 0 auto; text-align: left;">
-            <dt style="color: #4a2c3a;">2011-2016</dt>
-            <dd style="margin: 0; padding-left: 60px;">SK KOMPLEKS KLIA</dd>
-
-            <dt style="color: #4a2c3a;">2017-2021</dt>
-            <dd style="margin: 0; padding-left: 60px;">SMK KOMPLEKS KLIA</dd>
-
-            <dt style="color: #4a2c3a;">2021-Now</dt>
-            <dd style="margin: 0; padding-left: 60px;">UiTM REMBAU</dd>
-            </dl>
-
-        <div style="width: 80%; margin: 0 auto; font-size: large;">
-            <p style="text-align: justify;">
-            I'm studying at <strong>Universiti Teknologi MARA(UiTM) Rembau</strong> in <em>Diploma Information Management</em> 
-            (<abbr title="Pengajian Sains Maklumat, Kolej Pengkomputeran, Informatik dan Matematik">PSM, KPPIM</abbr>).
-            For your information, I have always wanted to study architecture because it is my passion. Unfortunately, I didn’t get into the architecture 
-            course I wanted. Instead, I decided to pursue a Diploma in Information Management. For my degree, I think I would love to continue in content 
-            management, since it combines my interests in technology, communication, and creativity.
-        </p>
+    <!-- About Me and Education Section -->
+    <div class="about-me">
+        <!-- About Myself Text -->
+        <div>
+            <h3>𓆩♡𓆪 ABOUT MYSELF 𓆩♡𓆪</h3>
+            <p>
+                My name is <i>Nur Ismahani binti Ahmad Remi</i>, but I am commonly known as <strong>Isma</strong>. I was born at 
+                <strong>Hospital Besar Ipoh, Perak</strong> on <i>September 16, 2004</i>, and I am now <strong>20 years old</strong>. I am the 
+                <strong>eldest</strong> of three siblings, with my younger siblings aged 17 and 12. Being part of a loving and close-knit family 
+                has taught me values of <i>responsibility, patience, and care.</i>
+            </p>
+            <p>
+                I am a self-disciplined and resourceful problem-solver. My ability to manage my time effectively allows me to 
+                balance my academic, personal, and social life while consistently achieving my objectives.
+            </p>
+            <p>
+                Growth, to me, is not only about success but also about learning from setbacks and moving forward with resilience. 
+                I strive to nurture relationships that matter most while staying focused on my goals.
+            </p>
         </div>
 
+        <!-- Education Journey Section -->
+        <div style="margin-top: 20px;">
+            <h3>𓆩♡𓆪 MY EDUCATION JOURNEY 𓆩♡𓆪</h3>
+            <dl>
+                <dt>2011-2016</dt>
+                <dd>SK KOMPLEKS KLIA</dd>
 
-        <!--About internship-->
-        <h3 style="color: #f1c6d0; text-shadow: 4px 3px 5px black; margin-left: 150px;">𓆩♡𓆪 WORK EXPERIENCE 𓆩♡𓆪</h3>
-        <p style="text-align: justify; font-size: large; width: 80%; margin: 0 auto;">
-            During my internship at the <strong>Unit Hal Ehwal Islam (UHEI) at Universiti Teknologi MARA (UiTM)</strong>, I gained valuable experience in various office tasks 
-            and learned a lot about administrative work. My main duties included creating and editing posters, managing official letters, and shredding documents. 
-            I also helped prepare reports for programs and drafted meeting minutes, which helped me improve my writing and organizational skills. Working at UHEI 
-            taught me how to be more responsible and detail-oriented in handling tasks. I was also able to develop my communication skills as I worked closely with 
-            my colleagues and supervisors. This internship was a great opportunity for me to understand the importance of office work and how it supports the smooth 
-            running of an organization. Overall, my time at UHEI was a positive learning experience that allowed me to grow both personally and professionally.<br>
-            However, if I were to recommend this place for students at UiTM to intern, I would say it might not be the best choice. This is because the internship 
-            took place during the semester break, and as a result, there were fewer students around, and fewer programs took place.
-            This meant there were fewer opportunities for hands-on learning and interaction with students. However, during regular times when students return from 
-            semester breaks, the situation changes. UHEI is involved in a lot of activities, and interns have the chance to participate in various programs, events, 
-            and projects. The office is busier, and interns would have more opportunities to engage in meaningful tasks. Therefore, if a student from outside UiTM
-             were to intern here, I would definitely recommend it, as they would have a fuller experience during the active periods.
-             <br>
+                <dt>2017-2021</dt>
+                <dd>SMK KOMPLEKS KLIA</dd>
 
-             <hr style="border: 5px solid #4a2c3a; width: 80%; margin: 20px auto;">
-             <div style="text-align: center; font-size: 18px; line-height: 1.6; color: #333; width: 80%; margin: 0 auto;">
-             This is a picture taken during my internship. Click on the image to view it in full size in a new tab.
-        </p>
-
-
-      <!-- Picture During Internship -->
-    <div style="text-align: center; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-
-        <!-- First Picture -->
-        <a href="Picture/merdeka-hias1.jfif" target="_blank">
-        <img src="Picture/merdeka-hias1.jfif" 
-             width="300" height="200"
-             style="border: 2px solid #4a2c3a; object-fit: cover;">
-        </a>
-
-        <!-- Second Picture -->
-        <a href="Picture/merdeka-hias2.jfif" target="_blank">
-        <img src="Picture/merdeka-hias2.jfif" 
-             width="300" height="200"
-             style="border: 2px solid #4a2c3a; object-fit: cover;">
-        </a>
-
-        <!-- Third Picture-->
-        <a href="Picture/fillingpaper.jpeg" target="_blank">
-        <img src="Picture/fillingpaper.jpeg" 
-             width="300" height="200"
-             style="border: 2px solid #4a2c3a; object-fit: cover;">
-        </a>
-
-        <!-- Fourth Picture-->
-        <a href="Picture/onlineprogram.png" target="_blank">
-        <img src="Picture/onlineprogram.png" 
-             width="300" height="200"
-             style="border: 2px solid #4a2c3a; object-fit: cover;">
-        </a>
-
-        <!--Fifth Picture-->
-        <a href="Picture/dailyposting.png" target="_blank">
-        <img src="Picture/dailyposting.png" 
-             width="300" height="200"
-             style="border: 2px solid #4a2c3a; object-fit: cover;">
-        </a>
-
-        <!--Last Picture-->
-        <a href="Picture/maulidurrasulprogram1.jpeg" target="_blank">
-        <img src="Picture/maulidurrasulprogram1.jpeg" 
-             width="300" height="200"
-             style="border: 2px solid #4a2c3a; object-fit: cover;">
-        </a>
-
+                <dt>2021-Now</dt>
+                <dd>UiTM REMBAU</dd>
+            </dl>
+            <p style="text-align: justify;">
+                I'm studying at <strong>Universiti Teknologi MARA (UiTM) Rembau</strong> in <em>Diploma Information Management</em>
+                (<abbr title="Pengajian Sains Maklumat, Kolej Pengkomputeran, Informatik dan Matematik">PSM, KPPIM</abbr>).
+                For your information, I have always wanted to study architecture because it is my passion. Unfortunately, I didn’t get into the architecture 
+                course I wanted. Instead, I decided to pursue a Diploma in Information Management. For my degree, I think I would love to continue in content 
+                management, since it combines my interests in technology, communication, and creativity.
+            </p>
+        </div>
     </div>
-    <br>
-        <a href="#top">Back to Top</a>
-    </body>
+
+    <!--Bucket List-->
+    <div class="about-me">
+    <h3>𓆩♡𓆪 TRAVEL BUCKET LIST 𓆩♡𓆪</h3>
+<ol type="1">
+    <li>
+        KOREA
+        <br>
+        <img src="Picture/jeju_island.jpg" alt="jeju_island" width="300"><br>
+        <a href="https://koreatravelplanning.com/things-to-do-on-jeju-island/" target="_blank" style="text-decoration: none; color: palevioletred;">
+            Click to Learn More About Jeju Island
+        </a><br>
+        <a href="https://www.youtube.com/watch?v=ylnInIWxryU" target="_blank" style="text-decoration: none; color: lavenderblush;">
+            Watch a YouTube vlog about visiting Jeju Island
+        </a>
+    </li>
+    <li>
+        TURKEY
+        <br>
+        <img src="Picture/turki.png" alt="turki" width="300"><br>
+        <a href="https://www.chasingthedonkey.com/why-visit-turkey-reasons-we-love-turkiye/" target="_blank" style="text-decoration: none; color: palevioletred;">
+            Click to Learn More About Turkey
+        </a><br>
+        <a href="https://www.youtube.com/watch?v=hr_uQ21kELQ" target="_blank" style="text-decoration: none; color: lavenderblush;">
+            Watch a YouTube vlog about visiting Turkey
+        </a>
+    </li>
+    <li>
+        QATAR
+        <br>
+        <img src="Picture/Qatar.jpg" alt="Qatar" width="300"><br>
+        <a href="https://trip101.com/article/best-places-to-visit-in-qatar" target="_blank" style="text-decoration: none; color: palevioletred;">
+            Click to Learn More About Qatar
+        </a><br>
+        <a href="https://www.youtube.com/watch?v=eWUB0588wsg" target="_blank" style="text-decoration: none; color: lavenderblush;">
+            Watch a YouTube vlog about visiting Qatar
+        </a>
+    </li>
+    </div>
+
+
+       <!-- Back to Top Link -->
+<div align="center">
+    <a id="back-to-top" href="#">Back to Top</a>
+</div>
+
+
+
+    <!-- Footer Section -->
+    <footer style="background-color: #4a2c3a; color: white; text-align: center; padding: 20px 0; margin-top: 30px; height: 30px;">
+        <p>&copy; 2024 Isma personal website. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>

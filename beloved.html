@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>✿BELOVED✿</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    .content-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .content-container img {
+        width: 300px;
+        height: auto;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .content-box {
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        background-color:  #a44a6a;
+        flex: 1;
+    }
+</style>
+
+<body>
+    <!-- Navbar at the top -->
+    <div class="navbar">
+        <a href="home.html" target="_blank">Home</a>
+        <a href="Biodata.html" target="_blank">Biodata</a>
+        <a href="hobbies.html" target="_blank">Hobbies</a>
+        <a href="beloved.html" target="_blank">Beloved</a>
+        <a href="gallery.html" target="_blank">Galleries</a>
+        <a href="contact.html" target="_blank">Contact Information</a>
+    </div>
+
+    <!--Banner-->
+    <section class="banner beloved-banner" id="beloved-banner"></section>
+
+      <!--last update-->
+      <p>Last updated: <span id="lastUpdated"></span> at <span id="lastUpdatedTime"></span></p>
+
+      <script>
+          const lastModified = new Date(document.lastModified);
+  
+          // Format the date
+          const day = String(lastModified.getDate()).padStart(2, '0');
+          const month = String(lastModified.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+          const year = lastModified.getFullYear();
+  
+          // Format the time
+          const hours = String(lastModified.getHours()).padStart(2, '0');
+          const minutes = String(lastModified.getMinutes()).padStart(2, '0');
+          const seconds = String(lastModified.getSeconds()).padStart(2, '0');
+  
+          // Update the span elements
+          document.getElementById('lastUpdated').textContent = `${day}/${month}/${year}`;
+          document.getElementById('lastUpdatedTime').textContent = `${hours}:${minutes}:${seconds}`;
+      </script>
+    
+      <!-- Gallery Section: View with Box -->
+      <div class="content-container">
+        <img src="Picture/Parent.jpg" alt="Example Image">
+        <div class="content-box">
+            <h3> MY PARENT </h3>
+            <p>
+                My parents are the most important people in my life. They have always been there for me, no matter what. When I feel lost or scared, 
+                they are the first to comfort me with their kind words and warm hugs. They work so hard every day to make sure our family has everything
+                we need, even if it means sacrificing their own happiness. My parents have taught me the true meaning of love, strength, and patience. 
+                I admire their wisdom and the way they always put others before themselves. Every moment with them reminds me how lucky I am to have their
+                support and love. I hope one day I can make them proud and give back even a little of what they have given me.<br>
+                Both my parents are nearing their 50s, so I feel a strong responsibility to take care of them and be there for them. Even though I’m not someone
+                who openly shows my feelings, I have my own way of expressing how much I care. It may not always be obvious, but in my own quiet way, I try 
+                to show my gratitude and love for everything they have done. My goal is to continue supporting them and making their lives easier, even if it's 
+                in small ways. I want them to know that no matter what, I will always be there for them, just as they have always been there for me.
+            </p>
+        </div>
+    </div>
+
+     <!-- Sibling Section -->
+     <div class="content-container">
+         <img src="Picture/adik_beradik.jfif" alt="Picture of Siblings">
+         <div class="content-box">
+             <h3>About My Siblings</h3>
+             <p>My siblings are my lifelong companions. They are the ones I can always count on for laughter, advice, and support. We may argue sometimes, 
+                but they are the ones who truly understand me. Growing up together has created a bond that I treasure deeply, and I feel lucky to have them by my side. 
+                As the eldest child in the family, I always feel responsible for them. No matter what happens, I try my best to guide and support them in any way I can
+                because I care about them so much.<br>
+                My younger sister, Nur Umairah, is currently preparing for her SPM this year. She has been working very hard to reach her goals, and I am really proud 
+                of her efforts. Meanwhile, my little brother, Azhad Firas, is about to finish primary school and will soon start secondary school. Seeing them grow up 
+                and achieve new things makes me so happy. I hope they will continue to do their best in everything they do, and I will always be here to support them
+                through every step of their journey.</p>
+         </div>
+     </div>
+ 
+     <!-- Friend Section -->
+     <div class="content-container">
+         <img src="Picture/bestfriend.jfif" alt="Picture of Friends">
+         <div class="content-box">
+             <h3>About My Friends</h3>
+             <p>My friends are like a second family to me. They bring so much joy and positivity into my life. Whether we are laughing together or supporting
+                 each other through tough times, I know they will always be there for me. I truly cherish the memories we create and the strong bond we share. 
+                 These friendships mean a lot to me because they make my life happier and remind me that I am never alone. Having friends like them makes everything 
+                 better, and I feel lucky to have such amazing people by my side. 
+                 <br>These two friends, Nur Umairah and Nur Farhana, have been my closest companions 
+                 since primary and secondary school. We have always been together, and even after all these years, we remain very close. I often call Umairah by her 
+                 nickname, Umai, or sometimes Yuyu. Farhana, on the other hand, I usually call Yeon because of her obsession with Yeonjun. 
+                 They both have their own special qualities, and I rely on them in different ways. Although I have more than just these two best friends, 
+                 Umai and Yeon are the ones I am closest to until now. They have been with me through so many moments in life, and I am truly grateful to
+                  have friends like them who understand me so well..</p>
+         </div>
+     </div>
+ 
+
+     <!-- Footer Section -->
+<footer style="background-color: #4a2c3a; color: white; text-align: center; padding: 20px 0; margin-top: 30px; height: 30px;">
+    <p>&copy; 2024 Isma personal website. All rights reserved.</p>
+</footer>
+
+
+    
+</body>
+</html>

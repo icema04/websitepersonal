@@ -1,115 +1,91 @@
 <html>
-    <head>
-        <title>CONTACT</title>
+<head>
+    <title>✿CONTACT DETAILS✿</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <style>
-            body {
-                background: url('Picture/background2_testing.jpg') no-repeat center center / cover;
-                margin: 0;
-                padding: 0;
-                font-family: 'Arial', sans-serif;
-                color: #4a2c3a;
-            }
+<style>
+        /* Kotak keseluruhan */
+.about-box {
+    background: #ffc1cc; /* Latar belakang kotak */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow untuk kotak */
+    border-radius: 15px; /* Membulatkan sudut */
+    padding: 20px; /* Ruang dalam */
+    max-width: 900px; /* Had lebar */
+    margin: 0 auto; /* Pusatkan kotak */
+    text-align: center;
+}
+</style>
+<body>
+    <!-- Navbar at the top -->
+    <div class="navbar">
+        <a href="home.html" target="_blank">Home</a>
+        <a href="Biodata.html" target="_blank">Biodata</a>
+        <a href="hobbies.html" target="_blank">Hobbies</a>
+        <a href="beloved.html" target="_blank">Beloved</a>
+        <a href="gallery.html" target="_blank">Galleries</a>
+        <a href="contact.html" target="_blank">Contact Information</a>
+    </div>
 
-            .navbar {
-                background-color: #4a2c3a;
-                padding: 15px;
-                text-align: center;
-            }
+    <!--Banner-->
+    <section class="banner contact-banner" id="contact-info"></section>
 
-            .navbar a {
-                text-decoration: none;
-                color: white;
-                padding: 10px 15px;
-                margin: 0 5px;
-                background-color: #4a2c3a;
-                border-radius: 5px;
-                font-weight: bolder;
-            }
+    <!--clock-->
+<h1 id="clock">00:00:00</h1>
 
-            .navbar a:hover {
-                background-color: #8a6f9c;
-            }
+<script>
+    setInterval(() => {
+        const now = new Date();
+        document.getElementById('clock').textContent = now.toLocaleTimeString();
+    }, 1000);
+</script>
 
-            .contact-section {
-            max-width: 600px;
-            margin: 50px auto;
-            background-color: rgba(255, 255, 255, 0.85); /* Adjust transparency for less white box */
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            }
+      <!--last update-->
+      <p>Last updated: <span id="lastUpdated"></span> at <span id="lastUpdatedTime"></span></p>
 
-            
+      <script>
+          const lastModified = new Date(document.lastModified);
+  
+          // Format the date
+          const day = String(lastModified.getDate()).padStart(2, '0');
+          const month = String(lastModified.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+          const year = lastModified.getFullYear();
+  
+          // Format the time
+          const hours = String(lastModified.getHours()).padStart(2, '0');
+          const minutes = String(lastModified.getMinutes()).padStart(2, '0');
+          const seconds = String(lastModified.getSeconds()).padStart(2, '0');
+  
+          // Update the span elements
+          document.getElementById('lastUpdated').textContent = `${day}/${month}/${year}`;
+          document.getElementById('lastUpdatedTime').textContent = `${hours}:${minutes}:${seconds}`;
+      </script>
+   
 
-            .contact-section h2 {
-                margin-bottom: 15px;
-                font-size: 24px;
-                color: #4a2c3a;
-            }
+   
+    <title>Contact Information</title>
 
-            .contact-section p {
-                margin: 10px 0;
-            }
+    <div class="about-box">
+        <h2>Let's Connect</h2>
+        <p>Feel free to reach out if you'd like to chat:</p>
+        <p><strong>Email:</strong> <a href="mailto:nrismahani04@gmail.com?subject=Hello!">nrismahani04@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+60176505978">+60 17-6505978</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/qr/JSOE3WZM5NMYF1" target="_blank">Chat on WhatsApp</a></p>
+        <p><strong>Telegram:</strong> <a href="http://t.me/icemaaaa" target="_blank">Chat on Telegram</a></p>
+        <p><strong>Socials:</strong> <a href="https://www.tiktok.com/@nrishani_" target="_blank">Tiktok</a> | <a href="https://www.instagram.com/nrishani._/" target="_blank">Instagram</a> 
+    </div>
 
-            .contact-section a {
-                color: #4a2c3a;
-                text-decoration: none;
-                font-weight: bold;
-            }
+   
 
-            .contact-section a:hover {
-                text-decoration: underline;
-            }
 
-            .contact-section .emoji {
-                font-size: 20px;
-                margin-right: 5px;
-            }
-        </style>
-    </head>
+    
 
-    <body>
-        <!-- Heading -->
-        <center><font color="#ffffff"><h1> ⪩⪨ Get in Touch ⪩⪨ </h1></font></center>
+ 
+<!-- Footer Section -->
+<footer style="background-color: #4a2c3a; color: white; text-align: center; padding: 20px 0; margin-top: 30px; height: 30px;">
+    <p>&copy; 2024 Isma personal website. All rights reserved.</p>
+</footer>
 
-        <!-- Navigation Bar -->
-        <div class="navbar">
-            <a href="home_test.html" target="_blank">Home</a>
-            <a href="Biodata.html" target="_blank">Biodata</a>
-            <a href="hobbies.html" target="_blank">Hobbies</a>
-            <a href="#" target="_blank">Galleries</a>
-            <a href="contact.html" target="_blank">Contact Information</a>
-        </div>
-
-        <!-- Contact Information Section -->
-        <div class="contact-section">
-            <h2>Let's Connect</h2>
-            <p>Feel free to reach out if you'd like to chat or collaborate:</p>
-
-            <!-- Email -->
-            <p><span class="emoji">📧</span><strong>Email:</strong> 
-                <a href="mailto:nrismahani04@gmail.com?subject=Hello!">nrismahani04@gmail.com</a>
-            </p>
-
-            <!-- Phone -->
-            <p><span class="emoji">📞</span><strong>Phone:</strong> 
-                <a href="tel:+60176505978">+60 17-6505978</a>
-            </p>
-
-            <!-- Social Media -->
-            <p><span class="emoji">🌐</span><strong>Socials:</strong> 
-                <a href="https://www.tiktok.com/@nrishani_" target="_blank">Tiktok</a> | 
-                <a href="https://www.instagram.com/nrishani._/" target="_blank">Instagram</a> | 
-                <a href="https://www.twitter.com" target="_blank">Twitter</a>
-            </p>
-
-            <!-- Personal Message -->
-            <p>
-                <em>"Feel free to drop me a message anytime. Let's create something amazing together!"</em>
-            </p>
-
-        </div>
-    </body>
+    
+</body>
 </html>

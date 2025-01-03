@@ -1,0 +1,129 @@
+<html>
+<head>
+    <title>✿GALLERIES✿</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <style>
+           .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+         .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+<body>
+    <!-- Navbar at the top -->
+    <div class="navbar">
+        <a href="home.html" target="_blank">Home</a>
+        <a href="Biodata.html" target="_blank">Biodata</a>
+        <a href="hobbies.html" target="_blank">Hobbies</a>
+        <a href="beloved.html" target="_blank">Beloved</a>
+        <a href="gallery.html" target="_blank">Galleries</a>
+        <a href="contact.html" target="_blank">Contact Information</a>
+    </div>
+
+    <!--Banner-->
+    <section class="banner gallery-banner" id="gallery"></section>
+
+      <!--last update-->
+      <p>Last updated: <span id="lastUpdated"></span> at <span id="lastUpdatedTime"></span></p>
+
+      <script>
+          const lastModified = new Date(document.lastModified);
+  
+          // Format the date
+          const day = String(lastModified.getDate()).padStart(2, '0');
+          const month = String(lastModified.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+          const year = lastModified.getFullYear();
+  
+          // Format the time
+          const hours = String(lastModified.getHours()).padStart(2, '0');
+          const minutes = String(lastModified.getMinutes()).padStart(2, '0');
+          const seconds = String(lastModified.getSeconds()).padStart(2, '0');
+  
+          // Update the span elements
+          document.getElementById('lastUpdated').textContent = `${day}/${month}/${year}`;
+          document.getElementById('lastUpdatedTime').textContent = `${hours}:${minutes}:${seconds}`;
+      </script>
+
+    <center><font color="#ffffff"><h1> ⪩⪨ Welcome to the Gallery  ⪩⪨ </h1></font></center>
+
+
+    <!-- Gallery Section: View of Sunset -->
+    <center><h5 style="color: #4a2c3a; margin-left: 200px; margin-right: 200px;">𓆩♡𓆪 View of Sunset 𓆩♡𓆪</center></h5>
+    <div class="gallery">
+        <img src="Picture/Sunset.jpg" alt="Gallery Image 1">
+        <img src="Picture/sunset2.jpg" alt="Gallery Image 2">
+        <img src="Picture/sunset3.jpg" alt="Gallery Image 3">
+        <img src="Picture/sunset4.jpg" alt="Gallery Image 4">
+        <img src="Picture/sunset5.jpg" alt="Gallery Image 5">
+    </div>
+
+    <!-- Gallery Section: View of Hunting Food -->
+    <center><h5 style="color: #4a2c3a; margin-left: 200px; margin-right: 200px;">𓆩♡𓆪 View of Hunting Food 𓆩♡𓆪</center></h5>
+    
+    <div class="gallery">
+        <img src="Picture/food1.jpeg" alt="Gallery Image 1">
+        <img src="Picture/food3.jfif" alt="Gallery Image 2">
+        <img src="Picture/food4.jfif" alt="Gallery Image 3">
+        <img src="Picture/food9.jfif" alt="Gallery Image 4">
+        <img src="Picture/food7.jfif" alt="Gallery Image 5">
+        <img src="Picture/food8.jfif" alt="Gallery Image 6">
+        <img src="Picture/food6.jfif" alt="Gallery Image 7">
+    </div>
+
+       <!-- Gallery Section: View of Internship -->
+       <center><h5 style="color: #4a2c3a; margin-left: 200px; margin-right: 200px;">𓆩♡𓆪 Internship moments 𓆩♡𓆪</center></h5>
+    
+       <div class="gallery">
+           <img src="Picture/internshippicwithalisa.jpg" alt="Gallery Image 1">
+           <img src="Picture/merdeka-hias1.jfif" alt="Gallery Image 2">
+           <img src="Picture/onlineprogram.png" alt="Gallery Image 3">
+           <img src="Picture/maulidurrasulprogram1.jpeg" alt="Gallery Image 4">
+           <img src="Picture/merdeka-hias2.jfif" alt="Gallery Image 5">
+       </div>
+
+         <!-- Gallery Section: Classmates -->
+         <center><h5 style="color: #4a2c3a; margin-left: 200px; margin-right: 200px;">𓆩♡𓆪 Classmate CDIM110B 𓆩♡𓆪</center></h5>
+    
+         <div class="gallery">
+             <img src="Picture/classmate1.jpeg" alt="Gallery Image 1">
+             <img src="Picture/classmate2.jpeg" alt="Gallery Image 2">
+             <img src="Picture/best_friend.jpg" alt="Gallery Image 3">
+             <img src="Picture/classmate4.jpg" alt="Gallery Image 4">
+            
+
+         </div>
+
+
+    <!-- Back to Top Link -->
+    <a id="back-to-top" href="#" style="display: block; text-align: center; margin: 20px 0;">Back to Top</a>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #4a2c3a; color: white; text-align: center; padding: 20px 0; margin-top: 30px; height: 30px;">
+        <p>&copy; 2024 Isma personal website. All rights reserved.</p>
+    </footer>
+    
+
+    
+
+ 
+
+    
+</body>
+</html>

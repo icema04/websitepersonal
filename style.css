@@ -1,0 +1,90 @@
+    
+       body {
+        background-image: url('Picture/background-website2.png');
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif ;
+        color: white;
+        line-height: 1.6;
+    }
+    /* Navigation Bar Styles */
+    .navbar {
+        background-color: #4a2c3a; /* Solid dark plum color */
+        padding: 15px 20px;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 15px;
+        margin: 0 10px;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        background-color: #4a2c3a; /* Matches the navbar background */
+    }
+
+    .navbar a:hover {
+        background-color: #8a6f9c; /* Lighter plum for hover effect */
+        transform: scale(1.1); /* Subtle zoom effect */
+    }
+
+    /* Add responsive adjustments */
+    @media (max-width: 500px) {
+        .navbar {
+            padding: 10px;
+        }
+
+        .navbar a {
+            display: inline-block;
+            margin: 5px 0;
+        }
+    }
+
+    /* Banner Styles */
+    .banner {
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        margin-top: 60px; /* To prevent overlap with the navbar */
+    }
+
+    .home-banner {
+        background-image: url('video/banner-homebts3.gif'); /* Replace with your image path */
+    }
+
+    .biodata-banner {
+        background-image: url('Picture/banner-biodata\(new\).png'); /* Replace with your image path */
+    }
+
+    .hobbies-banner {
+        background-image: url('video/banner-homebts3.gif'); /* Replace with your image path */
+    }
+
+    .beloved-banner {
+        background-image: url('Picture/banner-biodata\(new\).png'); /* Replace with your image path */
+    }
+
+    .gallery-banner {
+        background-image: url('Picture/banner-biodata\(new\).png'); /* Replace with your image path */
+    }
+
+    .contact-banner {
+        background-image: url('video/banner-homebts3.gif'); /* Replace with your image path */
+    }
+    
+
+
+

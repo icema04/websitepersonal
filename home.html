@@ -1,0 +1,177 @@
+<html>
+<head>
+    <title>✿HOME PAGE✿</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+   /* Styling untuk keseluruhan bahagian */
+.about-section {
+    text-align: center;
+    padding: 30px;
+    color: #4a2c3a;
+}
+
+/* Tajuk */
+.welcome-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #a0788c;
+}
+
+.section-title {
+    font-size: 22px;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px #a0788c;
+}
+
+/* Kotak keseluruhan */
+.about-box {
+    background: #ffc1cc; /* Latar belakang kotak */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow untuk kotak */
+    border-radius: 15px; /* Membulatkan sudut */
+    padding: 20px; /* Ruang dalam */
+    max-width: 900px; /* Had lebar */
+    margin: 0 auto; /* Pusatkan kotak */
+}
+
+/* Kontainer untuk kandungan */
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Untuk responsif */
+}
+
+/* Styling untuk gambar */
+.about-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling untuk teks */
+.about-details {
+    text-align: left;
+    max-width: 500px;
+}
+
+.about-details h3 {
+    color: #a44a6a;
+    margin-bottom: 10px;
+}
+
+.about-details p {
+    font-size: 16px;
+    margin: 5px 0;
+    line-height: 1.6;
+}
+.motto-list {
+    list-style: none;
+    padding: 0;
+}
+
+.motto-list li {
+    display: flex;
+    align-items: center;
+}
+
+.motto-list img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+</style>
+</style>
+
+<body>
+    <!-- Navbar at the top -->
+    <div class="navbar">
+        <a href="home.html" target="_blank">Home</a>
+        <a href="Biodata.html" target="_blank">Biodata</a>
+        <a href="hobbies.html" target="_blank">Hobbies</a>
+        <a href="beloved.html" target="_blank">Beloved</a>
+        <a href="gallery.html" target="_blank">Galleries</a>
+        <a href="contact.html" target="_blank">Contact Information</a>
+    </div>
+
+<!-- Banner -->
+<section class="banner home-banner" id="home"></section>
+
+<!--clock-->
+<h1 id="clock">00:00:00</h1>
+
+<script>
+    setInterval(() => {
+        const now = new Date();
+        document.getElementById('clock').textContent = now.toLocaleTimeString();
+    }, 1000);
+</script>
+
+   <!--last update-->
+   <p>Last updated: <span id="lastUpdated"></span> at <span id="lastUpdatedTime"></span></p>
+
+   <script>
+       const lastModified = new Date(document.lastModified);
+
+       // Format the date
+       const day = String(lastModified.getDate()).padStart(2, '0');
+       const month = String(lastModified.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+       const year = lastModified.getFullYear();
+
+       // Format the time
+       const hours = String(lastModified.getHours()).padStart(2, '0');
+       const minutes = String(lastModified.getMinutes()).padStart(2, '0');
+       const seconds = String(lastModified.getSeconds()).padStart(2, '0');
+
+       // Update the span elements
+       document.getElementById('lastUpdated').textContent = `${day}/${month}/${year}`;
+       document.getElementById('lastUpdatedTime').textContent = `${hours}:${minutes}:${seconds}`;
+   </script>
+
+<div class="about-section">
+    <h1 class="welcome-title">𓆩♡𓆪 WELCOME TO MY WORLD 𓆩♡𓆪</h1>
+    <h2 class="section-title">—✧❇✧— A SIMPLE INTRODUCTION ABOUT ME —✧❇✧—</h2>
+    <div class="about-box">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="Picture/selfpicture.jpeg" alt="Self Picture">
+            </div>
+            <div class="about-details">
+                <h3>ABOUT ME</h3>
+                <p><strong>NAME:</strong> NUR ISMAHANI BINTI AHMAD REMI</p>
+                <p><strong>AGE:</strong> 20 YEARS OLD</p>
+                <p><strong>CLASS:</strong> N5CDIM1105B</p>
+                <h3>𓆩♡𓆪 LIFE MOTTO 𓆩♡𓆪</h3>
+                
+               
+
+                <div class="motto-section">
+                    <ul class="motto-list">
+                        <li><img src="Picture/custommarkers2.png" alt="Icon 1"><p>It's not about waiting for the storm to pass (patience), but learning to dance in the rain (strength).</p></li>
+                        <li><img src="Picture/custommarkers2.png" alt="Icon 2"><p>Success is not the key to happiness. Happiness is the key to success.</p></li>
+                        <li><img src="Picture/custommarkers2.png" alt="Icon 3"><p>Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.</p></li>
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer style="background-color: #4a2c3a; color: white; text-align: center; padding: 20px 0; margin-top: 30px; height: 30px;">
+    <p>&copy; 2024 Isma personal website. All rights reserved.</p>
+</footer>
+
+    
+
+ 
+
+    
+</body>
+</html>

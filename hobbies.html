@@ -1,80 +1,100 @@
 <html>
-    <head>
-        <title>HOBBIES</title>
+<head>
+    <title>✿HOBBIES✿</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar at the top -->
+      <!-- Navbar at the top -->
+      <div class="navbar">
+        <a href="home.html" target="_blank">Home</a>
+        <a href="Biodata.html" target="_blank">Biodata</a>
+        <a href="hobbies.html" target="_blank">Hobbies</a>
+        <a href="beloved.html" target="_blank">Beloved</a>
+        <a href="gallery.html" target="_blank">Galleries</a>
+        <a href="contact.html" target="_blank">Contact Information</a>
+    </div>
 
-        <style>
-            body {
-                background: url('Picture/background2_testing.jpg') no-repeat center center / cover;
-                margin: 0;
-                padding: 0;
-            }
+<!-- Banner -->
+<section class="banner hobbies-banner" id="hobbies"></section>
 
-            .navbar {
-                background-color: #4a2c3a;
-                padding: 15px;
-                text-align: center;
-            }
-    
-            .navbar a {
-                text-decoration: none;
-                color: white;
-                padding: 10px 15px;
-                margin: 0 5px;
-                background-color: #4a2c3a;
-                border-radius: 5px;
-                font-weight: bolder;
-            }
-    
-            .navbar a:hover {
-                background-color: #8a6f9c;
-            }
-        </style>
-    </head>
+   <!--last update-->
+   <p>Last updated: <span id="lastUpdated"></span> at <span id="lastUpdatedTime"></span></p>
+
+   <script>
+       const lastModified = new Date(document.lastModified);
+
+       // Format the date
+       const day = String(lastModified.getDate()).padStart(2, '0');
+       const month = String(lastModified.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+       const year = lastModified.getFullYear();
+
+       // Format the time
+       const hours = String(lastModified.getHours()).padStart(2, '0');
+       const minutes = String(lastModified.getMinutes()).padStart(2, '0');
+       const seconds = String(lastModified.getSeconds()).padStart(2, '0');
+
+       // Update the span elements
+       document.getElementById('lastUpdated').textContent = `${day}/${month}/${year}`;
+       document.getElementById('lastUpdatedTime').textContent = `${hours}:${minutes}:${seconds}`;
+   </script>
+
 
     <body>
         <!--heading websites atas sekali-->
         <center><font color="#ffffff"><h1> ⪩⪨ Explore My Collection Of Passions ⪩⪨ </h1></font></center>
-
-        <div class="navbar">
-            <a href="home_test.html" target="_blank">Home</a>
-            <a href="Biodata.html" target="_blank">Biodata</a>
-            <a href="hobbies.html" target="_blank">Hobbies</a>
-            <a href="#" target="_blank">Galleries</a>
-            <a href="contact.html" target="_blank">Contact Information</a>
-        </div>
-
-        <center><h3 style="color: #f1c6d0; margin-left: 200px; margin-right: 200px;">𓆩♡𓆪 FAVOURITE ANIME AND K-DRAMA𓆩♡𓆪</center></h3>
+        <center><h3 style="color: #f1c6d0; margin-left: 200px; margin-right: 200px;">𓆩♡𓆪 FAVOURITE THINGS TO DO 𓆩♡𓆪</h3></center>
+        <center><h5 style="color: #4a2c3a; margin-left: 200px; margin-right: 200px;"> 1. WACTHING K-DRAMA AND ANIME </center></h5>
        
 
-    <div style="margin: 20px 100px;">
-    <p>
-        <!-- Attack on Titan -->
-        <a href="Picture/Attack on Titan official pic.jpg">
-            <img src="Picture/Attack on Titan official pic.jpg" width="180" style="float: left; margin-right: 30px;">
-        </a>
+        <div style="margin: 20px 100px;">
+            <p>
+                <!-- Attack on Titan -->
+                <a href="Picture/Attack on Titan official pic.jpg">
+                    <img src="Picture/Attack on Titan official pic.jpg" width="180" style="float: left; margin-right: 30px;">
+                </a>
         
-        <h3 style="color: #f1c6d0;"><span title="Attack on Titan">•┈••✦ Shingeki no Kyojin ✦••┈•</span></h3>
-        <p style="text-align: justify;">
-            I love the story of <strong>Attack on Titan</strong> because it’s incredibly gripping and full of surprises. The show creates an immersive world 
-            where humanity is fighting for survival against terrifying Titans, with constant mysteries and secrets that make the story even more intriguing. 
-            The characters are deeply complex, each one facing their own struggles and growth, which makes it easy to connect with them. What keeps me hooked 
-            is the unpredictability of the plot, where every episode brings new twists and revelations. It's not just about the battle between humans and Titans, 
-            but about uncovering dark truths and dealing with the consequences of those revelations. The themes of freedom, sacrifice, and the devastating effects 
-            of war are explored in such a way that it constantly raises questions about the price of freedom and whether humanity can escape the cycles of violence 
-            they find themselves trapped in.
-        </p>
-        <p style="text-align: justify;">
-            What I love most about Attack on Titan is how it explores both the darkest parts of human nature and the light of hope and resilience. It doesn’t shy 
-            away from the harsh realities of the world, but it also shows the strength of the human spirit in the face of overwhelming odds. The show continuously 
-            challenges my expectations, keeping me emotionally invested in the characters and their journey. Each episode leaves me thinking deeply about the choices 
-            the characters make, the cost of war, and what it truly means to be free. The story is a perfect balance of intense action, thought-provoking themes, and 
-            powerful moments of human connection. <br>
+                <h3 style="color: #f1c6d0;"><span title="Attack on Titan">•┈••✦ Shingeki no Kyojin ✦••┈•</span></h3>
+                <p style="text-align: justify;">
+                    I love the story of <strong>Attack on Titan</strong> because it’s incredibly gripping and full of surprises. The show creates an immersive world 
+                    where humanity is fighting for survival against terrifying Titans, with constant mysteries and secrets that make the story even more intriguing. 
+                    The characters are deeply complex, each one facing their own struggles and growth, which makes it easy to connect with them. What keeps me hooked 
+                    is the unpredictability of the plot, where every episode brings new twists and revelations. It's not just about the battle between humans and Titans, 
+                    but about uncovering dark truths and dealing with the consequences of those revelations. The themes of freedom, sacrifice, and the devastating effects 
+                    of war are explored in such a way that it constantly raises questions about the price of freedom and whether humanity can escape the cycles of violence 
+                    they find themselves trapped in.
+                </p>
+                <p style="text-align: justify;">
+                    What I love most about Attack on Titan is how it explores both the darkest parts of human nature and the light of hope and resilience. It doesn’t shy 
+                    away from the harsh realities of the world, but it also shows the strength of the human spirit in the face of overwhelming odds. The show continuously 
+                    challenges my expectations, keeping me emotionally invested in the characters and their journey. Each episode leaves me thinking deeply about the choices 
+                    the characters make, the cost of war, and what it truly means to be free. The story is a perfect balance of intense action, thought-provoking themes, and 
+                    powerful moments of human connection.
+                </p>
+                <p style="text-align: justify;">
+                    <b>Genre:</b> The genre of Attack on Titan includes <span style="color: #f1c6d0;">dark fantasy, action, post-apocalyptic, and thriller.</span> It explores themes like survival, war, freedom, and the struggles of humanity.
+                </p>
         
-            <b> Genre:</b>
-            The genre of Attack on Titan includes <span style="color: #f1c6d0;">dark fantasy, action, post-apocalyptic, and thriller. It explores themes like survival, war, freedom, and the struggles of humanity.</span>
-        </p>
-    </p>
-    </div>
+               <!-- Clickable Thumbnail -->
+                <h4 style="color: #f1c6d0;">Favorite Sad Moment:</h4>
+                <a href="https://www.youtube.com/watch?v=H_8FY-TJexg&rco=1" target="_blank">
+                    <img src="https://img.youtube.com/vi/H_8FY-TJexg/0.jpg" alt="Sad Moment Thumbnail" width="560" height="315" 
+                        style="border: 1px solid #f1c6d0;">
+                </a>
+                <p style="text-align: justify; color: #f1c6d0;">
+                    Click the image to watch a heart-wrenching moment from Attack on Titan on YouTube.
+                </p>
+            
+            <p>
+                In my opinion, the saddest moment in Attack on Titan is when Mikasa is forced to kill someone she loves in order to end the war. This scene is 
+                heartbreaking because it shows how war can tear people apart and make them do unimaginable things. Mikasa, who has always been so close to Eren, 
+                has to make the ultimate sacrifice for the greater good. Watching her struggle with this decision really hit me because it shows how deeply war 
+                affects everyone, even the ones we care about the most. The emotional pain Mikasa feels is so real, and it makes me think about the high cost of 
+                peace and the difficult choices that sometimes have to be made to end violence. For me, this is the most sorrowful and tragic moment in the whole series.
+            </p>
+        </div>
+        
+        
     <hr style="border: 5px solid #4a2c3a; width: 100%; margin: 20px auto;">
 
     <div style="margin: 20px 100px;">
@@ -105,29 +125,80 @@
 
     <div style="margin: 20px 100px;">
 
-        <!-- Detective Conan -->
+       <!-- Taxi Driver -->
         <a href="Picture/taxi_driver.jpg">
             <img src="Picture/taxi_driver.jpg" width="180" style="float: left; margin-right: 30px;">
         </a>
 
         <h3 style="color: #f1c6d0;" align="left">•┈••✦ Taxi Driver Season 1 & 2 •┈••✦</h3>
         <p style="text-align: justify;">
-            I think <strong>Taxi Driver </strong> is one of the best K-dramas because of its exciting and meaningful story. It’s not just about action or revenge; 
+            I think <strong>Taxi Driver</strong> is one of the best K-dramas because of its exciting and meaningful story. It’s not just about action or revenge; 
             it shows how victims who were wronged by society get justice. The way Kim Do-gi and his team take on different cases is both thrilling and emotional. 
             Each episode tells a new story, and I love how it focuses on real-life issues like bullying or scams. Watching them fight for people who can’t fight for 
             themselves feels satisfying and inspiring.<br> 
             What makes it even better, in my opinion, is the strong teamwork and character development. The Rainbow Taxi team works like a family, and their bond 
             adds a lot of heart to the drama. I also love how the show keeps you thinking about what is right and wrong. It’s not just a simple revenge story—it makes
-             you question justice and morality in a creative way. Plus, the acting and action scenes are top-notch, which keeps me hooked from start to finish.<br>
-        <b> Genre:</b>
-            The genre of Detective Conan includes <span style="color: #f1c6d0;">mystery, detective fiction, crime, thriller, adventure, drama, comedy, romance.</span>
-            <br><br><br><br><br>
+            you question justice and morality in a creative way. Plus, the acting and action scenes are top-notch, which keeps me hooked from start to finish.<br>
+        <b>Genre:</b>
+            The genre of Taxi Driver includes <span style="color: #f1c6d0;">mystery, detective fiction, crime, thriller, adventure, drama, comedy, romance.</span>
+            <br><br>
         </p>
+
+        <!-- Clickable Thumbnail -->
+        <h4 style="color: #f1c6d0;">Favorite Sad Moment:</h4>
+        <a href="https://www.youtube.com/watch?v=BsJf53TqgH4" target="_blank">
+            <img src="https://img.youtube.com/vi/BsJf53TqgH4/0.jpg" alt="Sad Moment Thumbnail" width="560" height="315" 
+                style="border: 1px solid #f1c6d0;">
+        </a>
+        <p style="text-align: justify; color: #f1c6d0;">
+            Click the image to watch a heart-wrenching moment from Taxi Driver on YouTube.
+        </p>
+
+        <p>
+            This scene is very sad because it shows how even the strongest characters can feel weak. I feel sad watching it because Kim Do-gi, who is usually 
+            strong, seems so vulnerable in this moment. It’s hard to see him struggle emotionally when he’s always been so tough. This part reminds me that 
+            even strong people can feel pain and weakness sometimes. It’s really emotional to see him like this.
+        </p>
+
     </div>
     <hr style="border: 5px solid #4a2c3a; width: 100%; margin: 20px auto;">
 
+
+    <center><h5 style="color: #4a2c3a; margin-left: 200px; margin-right: 200px;"> 2. CREATIVE WRITING </center></h5>
+    <div style="margin: 20px 100px; display: flex; align-items: center;">
+        <!-- GIF Image -->
+        <img src="video/writing.gif" alt="Writing GIF" style="width: 50%; max-width: 300px; margin-right: 20px;">
+        
+        <div>
+            <h3 style="color: #f1c6d0;">•┈••✦ Writing Fanfiction •┈••✦</h3>
+            <p style="text-align: justify;">
+                I really enjoy writing fanfiction because it gives me the chance to explore and expand upon the stories and characters I love. It allows me to dive deeper 
+                into their worlds and create new scenarios that I feel could have happened but weren’t shown. Writing fanfic is a way for me to take the characters I connect 
+                with and give them a new direction, adding my own ideas and emotions. It's a fun way to express my creativity and imagine stories that I never get to see in 
+                the original material. Ultimately, it’s an escape where I can create my own adventures, make the characters mine, and experiment with new possibilities.
+            </p>
+        </div>
+    </div>
+
+    <center><h5 style="color: #4a2c3a; margin-left: 200px; margin-right: 200px;"> 3. EDITING </center></h5>
+    <div style="margin: 20px 100px; display: flex; align-items: center;">
+        <!-- GIF Image -->
+        <img src="video/editing.gif" alt="Writing GIF" style="width: 50%; max-width: 300px; margin-right: 20px;">
+        
+        <div>
+            <h3 style="color: #f1c6d0;">•┈••✦ Editing •┈••✦</h3>
+            <p style="text-align: justify;">
+                I enjoy editing as a hobby because it allows me to bring ideas to life in a way that feels creative and fulfilling. For example, when I edit posters, 
+                I love experimenting with layouts, colors, and fonts to ensure the design is visually appealing and effectively communicates the message. Similarly, 
+                editing K-pop-themed content, like fan edits or graphics, lets me combine my passion for music and creativity by highlighting my favorite idols or 
+                moments in unique ways. It’s not just about fixing errors; it’s about enhancing the impact of a story, design, or project. Whether it’s tweaking a 
+                poster for better clarity or adding effects to a K-pop edit, I find joy in the process of turning something good into something unforgettable.
+            </p>
+        </div>
+    </div>
+
     <!--FAVOURITE SONG-->
-    <center><h3 style="color: #f1c6d0; margin-left: 200px; margin-right: 200px;">𓆩♡𓆪 FAVOURITE SONGS𓆩♡𓆪</center></h3>
+    <center><h5 style="color: #4a2c3a; margin-left: 200px; margin-right: 200px;">4. LISTENING TO THE MUSIC </center></h5>
     
     <table border="1" style="width: 80%; margin: auto; text-align: center;">
         <tr>
@@ -137,7 +208,7 @@
         <tr>
             <td>
                 <!--Gfriend song-->
-                <video controls width="600" style="margin-bottom: 20px;">
+                <video controls width="600" style="margin-bottom: 20px; margin-top: 20px">
                     <source src="video/rough ballad.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -158,6 +229,7 @@
                 feel uncertain or struggle at times, but we keep going, hoping for better things.
             </td>
         </tr>
+
         <tr>
             <td>
                 <!--Akumanoko (attack on titan)-->
@@ -173,45 +245,63 @@
                 makes the song even more powerful, and it fits the anime’s intense atmosphere.<br>
                 What makes Akumanoko so special is how it matches the emotional journey of the characters. The mix of traditional and modern sounds adds a unique
                 touch, making the song memorable. Every time I hear it, it reminds me of the characters' battles and growth, making it feel even more meaningful.
-                <br>
+                <br><br>
                 <a href="pdf/akumanoko_lyrics.pdf" target="_blank">View Lyrics (PDF)</a>
             </td>
         </tr>
+
+        <tr>
+            <td>
+                <!--Imaginary Friend Itzy-->
+                 <video controls width="600" style="margin-bottom: 20px; margin-top: 20px">
+                    <source src="video/ITZY (있지) 'Imaginary Friend' (Color Coded Lyrics).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td align="justify">
+                <h3 style="color: #f1c6d0;" align="left">•┈••✦ Imaginary Friend By Itzy•┈••✦</h3>
+                In my opinion, Imaginary Friend by ITZY is a sad song because it talks about feeling lonely and having no one to turn to. The lyrics make me feel 
+                like the person is trying to hold on to something or someone that isn’t really there, which is really heartbreaking. It’s sad to think about how 
+                the person is struggling with their emotions and trying to find comfort in an imaginary friend. The song makes me reflect on how difficult it can 
+                be when you feel alone, even when you’re surrounded by people. It really touches my heart and makes me think about the pain of not being able to 
+                connect with others.
+                <br>
+            </td>
+            
+        </tr>
+            
+        <tr>
+            <td>
+                <!-- Gfriend All Sing 2024 -->
+                <iframe src="https://www.youtube.com/embed/uOyjj06GGuE" width="600" height="315" style="border: 1px solid #f1c6d0; margin-bottom: 20px; margin-top: 20px;"></iframe>
+            </td>
+            <td align="justify">
+                <h3 style="color: #f1c6d0;" align="left">•┈••✦ Gfriend Medley song (2015-2023) •┈••✦</h3>
+                I really like the voices of Gfriend. They sing so well together, and their harmonies make the song sound beautiful. The song itself has a nice, uplifting feel 
+                that makes you want to sing along. What's special about this performance is how the members connect with each other, showing their teamwork and energy. Their 
+                performance feels genuine and heartfelt, which makes the song even more enjoyable. It's clear that they put a lot of emotion into their singing, and it makes 
+                the whole experience feel memorable. I've been following them as a fan since their debut in 2015, and I'm really looking forward to their new song coming out 
+                in January 2025. I can't wait to hear what they have in store next! 
+                <br>
+                <a href="https://gfriend.fandom.com/wiki/List_of_songs_recorded_by_GFriend" target="_blank" style="text-decoration: none; color: purple;">
+                    click to see all the songs from their debut in 2015 until 2023
+            </td>
+        </tr>
+        
+
     </table>
+      <!-- Back to Top Link -->
+<div align="center" style="margin-top: 10px;">
+    <a id="back-to-top" href="#">Back to Top</a>
+</div>
 
-    <hr style="border: 5px solid #4a2c3a; width: 100%; margin: 20px auto;">
+    <!-- Footer Section -->
+<footer style="background-color: #4a2c3a; color: white; text-align: center; padding: 20px 0; margin-top: 30px; height: 30px;">
+    <p>&copy; 2024 Isma personal website. All rights reserved.</p>
+</footer>
 
-    <center><h3 style="color: #f1c6d0; margin-left: 200px; margin-right: 200px;">𓆩♡𓆪 FAVOURITE THINGS TO DO𓆩♡𓆪</center></h3>
+ 
 
-    <!--Favourite Menulis-->
-
-    <div style="margin: 20px 100px;">
-
-        <a href="Picture/tiktok_imagines.png">
-            <img src="Picture/tiktok_imagines.png" width="180" style="float: left; margin-right: 30px;">
-        </a>
-
-        <h3 style="color: #f1c6d0;" align="left">•┈••✦ WRITING FANFICTIONAL STORIES •┈••✦</h3>
-        <p style="text-align: justify;">
-            I think <strong>Taxi Driver </strong> is one of the best K-dramas because of its exciting and meaningful story. It’s not just about action or revenge; 
-            it shows how victims who were wronged by society get justice. The way Kim Do-gi and his team take on different cases is both thrilling and emotional. 
-            Each episode tells a new story, and I love how it focuses on real-life issues like bullying or scams. Watching them fight for people who can’t fight for 
-            themselves feels satisfying and inspiring.<br> 
-            What makes it even better, in my opinion, is the strong teamwork and character development. The Rainbow Taxi team works like a family, and their bond 
-            adds a lot of heart to the drama. I also love how the show keeps you thinking about what is right and wrong. It’s not just a simple revenge story—it makes
-             you question justice and morality in a creative way. Plus, the acting and action scenes are top-notch, which keeps me hooked from start to finish.<br>
-        <b> Genre:</b>
-            The genre of Detective Conan includes <span style="color: #f1c6d0;">mystery, detective fiction, crime, thriller, adventure, drama, comedy, romance.</span>
-            <br><br><br><br><br>
-        </p>
-    </div>
-    <hr style="border: 5px solid #4a2c3a; width: 100%; margin: 20px auto;">
-
-
-
-       
     
-    <br>
-    <a href="#top">Back to Top</a>
-    </body>
+</body>
 </html>
